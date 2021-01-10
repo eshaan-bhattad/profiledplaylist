@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .spotify import SpotifyAPI
+from . import graphs
+import plotly.graph_objects as go
+
 # Create your views here.
 
 def index(request):
@@ -24,6 +27,10 @@ def about(request):
 
 def comparison(request):
 	testing = "Profiled Playlist"
+	graph_data = [20, 14, 23, 5, 34]
+	bar_graph = graphs.graph(graph_data)
+
 	return render(request, 'comparison.html', {
 		'testing' : testing,
+		'bar_graph' : bar_graph,
 		})
