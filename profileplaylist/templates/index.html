@@ -2,6 +2,7 @@
 {% extends "header.html" %}
 <html lang="en">
 {% block content %}
+{% load static %}
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +13,16 @@
     </head>
     <body style="font-family: 'Oswald'">
     <div class="jumbotron text-center">
-        <h2>Welcome to the Profile Playlist Generator</h2>
+        <div style="text-align:left">
+            <img src="{% static 'images/spotify.png' %}" alt="Home" width="100" height="100" style="margin-bottom: -100px">
+        </div>
+        <div style="text-align:center">
+            <h2>Find Your Music Match!</h2>
+            <h4 style="color:#1DB954">Connect your Spotify Account to Find the Soul who Matches your Beat</h4>
+        </div>
+        <div style="text-align:right">
+            <img src="{% static 'images/spotify.png' %}" alt="Home" width="100" height="100" style="margin-top: -100px">
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
