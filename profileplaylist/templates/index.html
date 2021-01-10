@@ -26,11 +26,11 @@
             </div>
         </div>
 
-<!--         <form action="#" method="get"> -->
+        <form action="#" method="get">
           <div class="col-auto" style="color:#1DB954">
-            <center><button type="submit" onclick="loadDoc()" class="btn btn-dark mb-2 btn-lg" style="color:#1DB954">Connect to Spotify</button></center>
+            <center><input type="submit" onclick="loadDoc()" class="btn btn-dark mb-2 btn-lg" name="watchlist" style="color:#1DB954">Connect to Spotify</button></center>
           </div>
-<!--         </form> -->
+        </form>
         <br>
 
         <div class="card text-center">
@@ -57,18 +57,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
                 integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
                 crossorigin="anonymous"></script>
-        <script>
-          function loadDoc() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("demo").innerHTML = this.responseText;
-              }
-            };
-            xhttp.open("GET", "demo_get.asp", true);
-            xhttp.send();
-          }
-        </script>
     </body>
 {% endblock %}
 </html>

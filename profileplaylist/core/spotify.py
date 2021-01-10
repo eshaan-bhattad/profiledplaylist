@@ -37,9 +37,9 @@ class SpotifyAPI:
 
     
 
-spotify = SpotifyAPI()
-spotify.get_user_tracks()
-#spotify.get_user_followers()
-spotify.get_user_top_tracks()
-spotify.get_user_top_artists()
+# spotify = SpotifyAPI()
+# spotify.get_user_tracks()
+# #spotify.get_user_followers()
+# spotify.get_user_top_tracks()
+# spotify.get_user_top_artists()
 
