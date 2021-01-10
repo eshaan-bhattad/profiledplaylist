@@ -25,7 +25,7 @@ SECRET_KEY = 'rp6i*pwl5!+8rk1=duau4_#7$s%_xa-f@%j$9b@m0l5jmcup)v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['spotsimilarity.herokuapp.com']
 
 
 # Application definition
