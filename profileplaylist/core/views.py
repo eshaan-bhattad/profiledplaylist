@@ -4,6 +4,12 @@ from django.http import HttpResponse
 
 def index(request):
 	testing = "Profiled Playlist"
+	if request.method == 'POST':
+		spotify = SpotifyAPI()
+		spotify.get_user_tracks()
+		spotify.get_user_top_tracks()
+		spotify.get_user_top_artists()
+		
 	return render(request, 'index.html', {
 		'testing' : testing,
 		})
